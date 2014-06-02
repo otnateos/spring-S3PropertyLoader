@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/aletheia/spring-S3PropertyLoader.svg?branch=master)](https://travis-ci.org/aletheia/jSOAM)
+
+
 # README #
 
 S3 Property Loader has the aim of allowing loading of Spring property files from S3 bucket, in order to guarantee stateless machine configuration.
