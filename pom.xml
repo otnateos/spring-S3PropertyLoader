@@ -14,7 +14,7 @@
         <repository>
             <id>SixthSenseApp Artifactory</id>
             <name>SixthSenseApp Artifactory-releases</name>
-            <url>http://eatizer-tools.neosperience.com/artifactory/public-libs-snapshot-local</url>
+            <url>https://eatizer-tools.neosperience.com/artifactory/public-libs-release-local</url>
         </repository>
     </repositories>
 
