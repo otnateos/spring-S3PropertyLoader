@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.sixthsenseapp.libs</groupId>
-    <artifactId>s3-property-loder</artifactId>
+    <artifactId>s3-property-loader</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>S3Property Loader</name>
     <packaging>jar</packaging>
