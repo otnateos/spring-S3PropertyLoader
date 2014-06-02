@@ -10,6 +10,15 @@
     <name>S3Property Loader</name>
     <packaging>jar</packaging>
 
+    <repositories>
+        <repository>
+            <id>SixthSenseApp Artifactory</id>
+            <name>SixthSenseApp Artifactory-releases</name>
+            <url>http://eatizer-tools.neosperience.com/artifactory/public-libs-snapshot-local</url>
+        </repository>
+    </repositories>
+
+
     <parent>
         <groupId>com.sixthsenseapp.superpom</groupId>
         <artifactId>sixthsenseapp-superpom</artifactId>
