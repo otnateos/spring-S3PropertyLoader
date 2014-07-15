@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/aletheia/spring-S3PropertyLoader.svg?branch=master)](https://travis-ci.org/aletheia/jSOAM)
+[![Build Status](https://travis-ci.org/aletheia/spring-S3PropertyLoader.svg?branch=master)](https://travis-ci.org/aletheia/spring-S3PropertyLoader)
 
 
 # README #
@@ -62,7 +62,7 @@ key.
 Then update context to be
 
 ```
-<bean id="propertyConfigurer" class="org.longhorn.beanstalk.springintegration.config.S3PropertyPlaceholderConfigurer">
+<bean id="propertyConfigurer" class="com.sxthsenseapp.api.s3propertyloader.S3PropertyPlaceholderConfigurer">
   <property name="locations">
     <list>
       <value>classpath:another.properties</value>
@@ -104,3 +104,6 @@ this can be very helpful when dealing with stage/production environments.
 ## Future improvements
 * Add support for DynamoDB property locations: using a DynamoDB table as property storage
 * Add support for external REST service property location: using an external REST interface to get properties
+
+## Acknowledgements
+* Thanks to Paolo "PJ" Franzoni for helping me debug :-)
