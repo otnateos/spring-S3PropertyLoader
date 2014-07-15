@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/aletheia/spring-S3PropertyLoader.svg?branch=master)](https://travis-ci.org/aletheia/jSOAM)
+[![Build Status](https://travis-ci.org/aletheia/spring-S3PropertyLoader.svg?branch=master)](https://travis-ci.org/aletheia/spring-S3PropertyLoader)
 
 
 # README #
