@@ -104,3 +104,6 @@ this can be very helpful when dealing with stage/production environments.
 ## Future improvements
 * Add support for DynamoDB property locations: using a DynamoDB table as property storage
 * Add support for external REST service property location: using an external REST interface to get properties
+
+## Acknowledgements
+* Thanks to Paolo "PJ" Franzoni for helping me debug :-)
