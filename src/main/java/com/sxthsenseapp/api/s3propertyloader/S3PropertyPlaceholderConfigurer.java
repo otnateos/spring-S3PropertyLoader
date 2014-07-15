@@ -40,6 +40,7 @@ public class S3PropertyPlaceholderConfigurer extends PropertyPlaceholderConfigur
     private S3ResourceLoader resourceLoader;
     private String[] s3Locations = new String[0];
     private Resource[] conventionalResources = new Resource[0];
+    private boolean ignoreS3resourceNotFound = false;
 
     public S3PropertyPlaceholderConfigurer() {
         resourceLoader = new S3ResourceLoader();
@@ -74,12 +75,17 @@ public class S3PropertyPlaceholderConfigurer extends PropertyPlaceholderConfigur
 
         if (total > 0) {
             List<Resource> allResources = new ArrayList<Resource>();
+            for (String s3Location : s3Locations) {
+                try {
+                    allResources.add(resourceLoader.getResource(s3Location));
+                }catch(S3ResourceException exp){
+                  if(!ignoreS3resourceNotFound) throw exp;
+                }
+            }
             for (Resource conventionalResource : conventionalResources) {
                 allResources.add(conventionalResource);
             }
-            for (String s3Location : s3Locations) {
-                allResources.add(resourceLoader.getResource(s3Location));
-            }
+
             super.setLocations(allResources.toArray(new Resource[0]));
         }
 
