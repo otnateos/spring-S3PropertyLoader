@@ -62,7 +62,7 @@ key.
 Then update context to be
 
 ```
-<bean id="propertyConfigurer" class="org.longhorn.beanstalk.springintegration.config.S3PropertyPlaceholderConfigurer">
+<bean id="propertyConfigurer" class="com.sxthsenseapp.api.s3propertyloader.S3PropertyPlaceholderConfigurer">
   <property name="locations">
     <list>
       <value>classpath:another.properties</value>
