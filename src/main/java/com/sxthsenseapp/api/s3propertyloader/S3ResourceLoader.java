@@ -24,23 +24,24 @@ package com.sxthsenseapp.api.s3propertyloader;
  * #L%
  */
 
-import lombok.extern.slf4j.Slf4j;
 import org.jets3t.service.S3Service;
 import org.jets3t.service.S3ServiceException;
 import org.jets3t.service.impl.rest.httpclient.RestS3Service;
 import org.jets3t.service.model.S3Object;
 import org.jets3t.service.security.AWSCredentials;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 
 import java.io.InputStream;
 
-@Slf4j
 public class S3ResourceLoader implements ResourceLoader {
 
     private static final String LOCATION_PREFIX = "s3://";
     private static final String ENVIRONMENT_VARIABLE_PREFIX = "S3_CONFIG_RES_";
+    private final Logger log = LoggerFactory.getLogger(getClass());
     
     public static class S3Path {
         public String bucket;
